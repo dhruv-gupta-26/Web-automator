@@ -1,61 +1,19 @@
-#🧭 Web Automator
-A simple Python script to automatically open a curated set of websites based on your context—work or personal.
+# 🧭 Web Automator
 
-🔧 What It Does
-This script streamlines your workflow by launching predefined groups of websites in your default browser with a single command-line argument.
+A simple Python script to launch a set of predefined websites—based on your current context—using a single command.
 
-🧠 Why It’s Useful
-Time-saving: Instantly opens all your go-to tabs at once.
+## 🚀 Features
 
-Context-aware: Switch between work and personal environments easily.
+- Open grouped websites for `work`, `personal`, or `research` with one prompt.
+- Lightweight and dependency-free—uses Python’s standard library.
+- Easy to customize—just update the `URLS` dictionary.
+- Saves time by reducing repetitive browser actions.
 
-Lightweight: No dependencies, just Python’s standard library.
+## 💻 Demo
 
-Customizable: Easily modify the URLS dictionary to fit your routine.
+```bash
+$ python script.py work
+Opening the following websites:
+- https://www.google.com
+- https://www.leetcode.com
 
-🚀 How to Use It
-Clone the repo:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/web-automator.git
-cd web-automator
-Run the script with the desired set:
-
-bash
-Copy
-Edit
-python script.py work
-or
-
-bash
-Copy
-Edit
-python script.py personal
-🛠️ Customization
-Want to add your own sets?
-
-Edit the URLS dictionary in script.py:
-
-python
-Copy
-Edit
-URLS = {
-    "work": ["https://mail.google.com", "https://github.com"],
-    "personal": ["https://reddit.com", "https://spotify.com"],
-    "research": ["https://arxiv.org", "https://scholar.google.com"]
-}
-⚙️ Requirements
-Python 3.x
-
-A default web browser configured on your system
-
-💡 Future Ideas (Optional)
-Add GUI with Tkinter or PyQt
-
-Support for scheduling (e.g., open at specific times)
-
-Save/load user profiles from a JSON file
-
-Browser-specific support (Chrome, Firefox, etc.)
